@@ -1,0 +1,84 @@
+UPTIME FIXER — CREATIVE HOMEPAGE UPDATE
+Theme 4.1.0 | Plugin 2.4.1
+
+INSTALL WITHOUT DELETING YOUR EXISTING SITE
+1. Take a database + wp-content backup, or test on your staging copy first.
+2. Appearance > Themes > Add New > Upload Theme: upload the updated theme ZIP.
+   Choose Replace current with uploaded. Keep the existing alltools folder name.
+3. Plugins > Add New > Upload Plugin: upload the updated plugin ZIP.
+   Choose Replace current with uploaded. Do not delete/uninstall the old plugin first.
+4. Leave Yoast activated. Do not run a demo import or reset its settings.
+5. Settings > Permalinks > Save Changes once, then clear WordPress/CDN/browser caches.
+6. The new layout is the front-page.php homepage. Existing posts, tool URLs,
+   media, site logo and database settings are retained. If needed select your
+   existing Home page in Settings > Reading. Do not create a second homepage.
+
+WHAT CHANGED
+- Custom editorial homepage with ten optimized WebP illustrations, quick actions,
+  live tool search, category collections, real existing article cards, privacy
+  guidance, FAQs and mobile/dark layouts. All ten images total about 409 KiB.
+- Published articles are queried, never deleted. Existing featured images are used.
+  When there are no available articles, practical tips appear instead of fake posts.
+- Automatic writes to stored Yoast metadata have been removed. Existing titles,
+  descriptions, canonicals, focus keywords and robot fields are not rewritten.
+  Missing front-end descriptions are supplied as fallbacks, without database writes.
+- Homepage WebSite/CollectionPage/ItemList structured data when Yoast is absent;
+  a homepage ItemList is added to Yoast's existing graph when Yoast is active.
+  Existing tool WebApplication schema and archive ItemList schema remain.
+- Existing Yoast descriptions, archive visibility and sitemap exclusions are respected.
+  Sitemap URL schemes follow the site's actual configured URL rather than forced HTTPS.
+- Plugin file drag-and-drop and dropdown Reset defaults fixed.
+- Plugin/extractor assets also load for tools embedded with the alltool shortcode.
+- Invalid BMI, mortgage and salary inputs now show errors rather than invalid results.
+- Mobile menu keyboard focus handling and homepage overflow/contrast fixed.
+- Failed library loads can retry cleanly. Setup errors are retained for retry.
+- Existing tool content/statuses and existing Blog page templates are preserved.
+  Trashed tools are not automatically recreated by setup/import checks.
+- Missing API credentials now use temporary, noncached redirects, not permanent ones.
+
+SITEMAP / SEO
+With Yoast active: keep XML sitemaps enabled in Yoast and check /sitemap_index.xml.
+Without Yoast: WordPress core provides /wp-sitemap.xml.
+robots.txt advertises the matching sitemap. Do not submit both generators.
+Submit the active sitemap to Google Search Console after installing.
+If Yoast explicitly excludes a page or post type, that setting is preserved.
+A theme update does not guarantee indexing or search rankings.
+
+ADSENSE
+The supplied site's existing ads.txt/publisher configuration was retained.
+Confirm pub-9901210156464210 belongs to your account, or set your correct publisher
+ID in Theme Settings and check the live domain's /ads.txt.
+Review your real About, Contact, Privacy and Terms pages, advertising disclosures,
+regional consent setup and original article/tool guidance before applying.
+No fake ratings, visitor counts or AdSense approval claims were added.
+Google alone decides approval; design and schema cannot guarantee it.
+Reference: https://support.google.com/adsense/answer/7299563
+
+VALIDATION COMPLETED
+- 46 PHP files parsed for PHP 7.4 syntax compatibility; 14 JS files syntax checked.
+- Isolated WordPress 7.1.2 / PHP 8.5.10 with SQLite: 346 public tools rendered.
+- Chromium: all 346 tool interfaces initialized without JavaScript page errors
+  or missing plugin handler registrations. This is initialization coverage,
+  not proof of every operation on every file format.
+- Functional checks: homepage search, FAQ, mobile menu, dark mode, word count,
+  JSON formatting, unit conversion, BMI valid/invalid input, zero-interest mortgage,
+  plugin dropdown reset and drag-and-drop file selection.
+- Desktop 1440px and mobile 390px: one homepage H1 and no horizontal overflow.
+- Existing sample post bodies/statuses and Yoast metadata remained identical
+  after setup and SEO sync calls. Shortcode asset loading was verified.
+- Core sitemap provider and robots.txt sitemap entry verified locally.
+
+LIVE-SITE CHECKS STILL REQUIRED
+These ZIPs do not contain your live database or credentials and have not been
+installed on your server. Actual outbound requests, CDN libraries, provider keys,
+large media files, microphone/browser permissions, caching and third-party plugin
+conflicts depend on the hosting/browser. PDF/media operations and all possible
+input/output combinations have not been end-to-end verified.
+17 provider-dependent tools remain available only when their required credentials
+are configured (OpenAI, DataForSEO or PageSpeed). No API credentials are bundled.
+Your original posts are retained even when a provider-dependent tool is not listed.
+Check representative tool results on staging before using the update live.
+
+PREVIEW
+Screenshots show the rendered homepage in an isolated test site. Your own logo,
+existing published articles and their images will come from your live WordPress data.

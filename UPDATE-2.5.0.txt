@@ -1,0 +1,14 @@
+UPTIME FIXER OVERALL TOOLS SUITE 2.5.0 - PERFORMANCE UPDATE
+
+SAFETY / PRESERVATION
+- All existing plugin tool definitions are preserved.
+- No tool slug, URL, renderer implementation or processing engine was removed.
+- The original Website Image Extractor is preserved.
+
+PERFORMANCE
+- Every suite page keeps the small common controller but now loads only the module needed for that tool: data, media, PDF, marketing or advanced.
+- Suite scripts use deferred loading where supported.
+- The Website Image Extractor frontend script is deferred where supported.
+
+AFTER INSTALL
+Replace the existing plugin with this ZIP; do not uninstall first. Then clear caches and test representative tools from each category.
